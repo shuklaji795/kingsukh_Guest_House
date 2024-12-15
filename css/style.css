@@ -1,0 +1,803 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+ .line{
+    width: 10%;
+    height: 5px;
+    background-color: violet;
+    display: inline-block;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color: #e167d34e;
+    z-index: 20;
+}
+nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+}
+nav .menu a{
+    text-decoration: none;
+    color: #db32b9;
+    font-size: 1.4rem;
+}
+.logo{
+   width: 17%;
+}
+header .menu{
+    width: 56%;
+            
+   }
+  header ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+   }
+   .btn{
+    width: 17%;
+}
+.btn button{
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 0.4rem;
+  background-color: #BC1C5C;
+ border: none;
+
+}
+nav .btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+  
+}
+nav .logo a{
+    text-decoration: none;
+    color:#F0F8FF ;
+    font-size: 1.4rem;
+}
+.home-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-image: url("../images/ayodhya.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-block: 15rem;
+}
+.home-section .home-section-details{
+    width:55% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-section p{
+  color: #C5D3E1;
+  font-size: 1.7rem;
+
+}
+.home-section h1{
+  color: #FFFFFF;
+  font-size: 5rem;  
+}
+.home-section h1 span{
+    color: #E82574;
+}
+.home-section .home-btn{
+    margin: 10rem;
+    width: 100%;
+    background-color:#FFFFFF ;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-section .home-btn button{
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 0.4rem;
+    background-color: #BC1C5C;
+   border: 0.8px solid #BC1C5C;   
+}
+.home-section .home-btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+.about-section{
+    width: 100%;
+    padding-block: 4rem;
+} 
+.about-section-main{
+    width: 90%;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   margin: 0 auto;
+}
+.about-section .about-section-main .left{
+    width: 45%;
+
+}
+.about-section .about-section-main img{
+    width: 100%;
+    border-radius: 0.8rem;
+}
+.about-section .about-section-main .right{
+    width: 45%;
+}
+.about-section-main .right h5{
+    color: #0C0A09;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
+
+}
+.about-section-main .right h1{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.about-section-main .right p{
+    color:#78716C ;
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+.about-section-main .right a{
+    color:#551A8B ;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2rem 0 0 0;
+}
+.about-section-main .right .a-contact{
+    color: #0000EE;
+    line-height: 3rem;
+}
+.about-section-main .right .a-batan{
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 0.4rem;
+    background-color: #BC1C5C;
+   border: none; 
+   text-decoration: none;
+   color: #FFFFFF;
+   font-size: 1.2rem; 
+
+}
+.about-section-main .right button{
+    margin-top: 4rem;
+    border: none;
+}
+.room-main{
+    width: 100%;
+    padding-block:  0 4rem;
+}
+.room{
+    width: 90%;
+    margin: 0 auto;
+}
+.room-main .room .text h4{
+    color: #0C0A09;
+    font-size: 1.2rem;
+    font-weight: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
+}
+.room-main .room .text h1{
+    color:#0C0A09 ;
+    font-size: 3rem;
+    width: 45%;
+    font-weight: bold;
+    padding-block: 1.2rem 0;
+}
+.room-main .room .card{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding-block: 4rem 0;
+    gap: 2rem;
+}
+.room-main .room .card .left-card{
+    width: 35%;
+    box-shadow: 0 4px 15px  #E9E9E9;
+
+} 
+.room-main .room .card .right-card{
+    width: 35%;
+    box-shadow: 0 8px 15px  #E9E9E9;
+}
+.card .images{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    background-image: url("/images/small.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 20rem 0;
+    border-radius: 0.8rem;
+}
+.card .images .icons{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card .images .icons .icon{
+    width: 30%;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 100%;
+ }
+.card .images .icons .icon img{
+    width: 100%;
+    mix-blend-mode: darken;
+}
+.card .right-card .images{
+    background-image:url("/images/large.jpg") ;
+} 
+.card  .card-text
+{
+    padding-block: 2rem 0;
+}
+.card .card-text h3{
+    color: #0C0A09;
+    font-size: 2rem;
+    font-weight: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
+}
+.card .left-card .card-text p{
+color: #78716C;
+font-size: 1.7rem;
+padding-block: 0.8rem 0;
+width: 80%;
+}
+.card .right-card .card-text p{
+    color: #78716C;
+    font-size: 1.7rem;
+    padding-block: 0.8rem 0;
+    width: 90%;
+    }
+    .card .card-text span{
+        color:#0C0A09 ;
+        font-weight: bold;
+    }
+    .card .card-text button{
+        padding: 1rem;
+        width: 10rem;
+        border-radius: 0.4rem;
+        background-color: #BC1C5C;
+       border: none;
+     
+      
+    }
+    .card .card-text a{
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        padding-block: 1rem 0;
+    }
+
+
+
+    .services-container{
+        width: 100%;
+        margin: 0 auto;
+        background-image: url("../images/palash.webp");
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: end;
+        padding-inline: 0 1rem;        
+    }
+    .services{
+     width: 40%;
+     background-color: #FFFFFF;
+     padding-inline:2rem;
+     padding-block: 2rem;
+     
+    }
+    .services .service-desc{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .services h4{
+        font-size: 1.2rem;
+        font-weight: none;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        ;
+        padding-bottom: 1.2rem;
+    }
+    .services h1{
+    font-size:3rem;
+    padding-bottom: 1.3rem;
+    
+    }
+    ul li{
+        display: flex;
+        align-content: center;
+        width: 100%;
+        gap: 2rem;
+        mix-blend-mode: darken;
+    }
+    .services-container .services .services-main{
+     width: 80%;
+     padding: 1rem;
+    }
+    ul li img{
+    width: 100%;  
+        background-color: #DBEAFE;
+      padding: 0.9rem;
+        border-radius: 100%;
+
+    }
+    ul li .img1{
+        width: 20%;
+    }
+    ul li .head1{
+        width: 70%;
+        margin-top: 2.2rem;
+        color: #0C0A09;
+        font-size: 1.1rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        ;
+        font-weight: lighter;
+    }
+    ul li .img2{
+        width: 20%;
+    }
+    ul li .head2{
+        width: 70%;
+        margin-top: 2.2rem;
+        color: #0C0A09;
+        font-size: 1.1rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        ;
+        font-weight: lighter;
+    }
+    ul li .img3{
+        width: 20%;
+    }
+    ul li .head3{
+        width: 70%;
+        margin-top: 2.2rem;
+        color: #0C0A09;
+        font-size: 1.1rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        ;
+        font-weight: lighter;
+    }
+    ul li .img4{
+        width: 20%;
+    }
+    ul li .head4{
+        width: 70%;
+        margin-top: 2.2rem;
+        color: #0C0A09;
+        font-size: 1.1rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        ;
+        font-weight: lighter;
+    }
+    
+    .booking{
+        width: 100%;
+        padding-block: 4rem 4rem;
+       
+    }
+    .booking .booking-center{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        padding: 4rem 4rem;
+        box-shadow: 0 8px 15px  #E9E9E9;
+    }
+    .booking .book-custmor{
+        width: 50%;
+        text-align: center;
+    }
+    .booking .satisfy-custmor{
+        width: 50%;
+    }
+
+    .booking .book-custmor h3{
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-bottom: 0.5rem;
+        color: #0C0A09;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .booking .satisfy-customer h3{
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding-bottom: 0.5rem;
+        color: #0C0A09;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .book-custmor p{
+        color: #89716C;
+        font-size: 1.5rem;
+    }
+    .satisfy-customer p{
+        color: #89716C;
+        font-size: 1.5rem;
+    }
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; 
+    margin-top: 30px;
+}
+.gallery-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; 
+}
+.image {
+    position: relative;
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.image.featured {
+    grid-column: span 2;
+    height: 500px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.image.featured img {
+    object-position: center;
+}
+ .gallery-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-left: 3.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
+ }
+    .contact{
+        width: 100%;
+        padding-top: 4rem;
+
+    }
+    .contact .contact-center{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 0 auto;
+    }
+    .contact .contact-center  .contact-info{
+        width: 40%;
+        background-color: #E82574;
+        border-radius: 1rem;
+        padding-block: 2rem;
+        padding-inline: 2rem;
+    }
+    .contact-header h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .contact .contact-center .message{
+        width: 50%;
+    }
+    .contact .contact-info .contact-imge {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .contact img{
+        width: 4rem;
+    }
+    .contact .contact-info .contact-imge a {
+        text-decoration: none;
+        color: #FFFFFF;
+        margin-left: 10px;
+        font-size: 1.5rem;
+    }
+    .contact .contact-logo a{
+        margin-right: 10px;
+    }
+    .contact .contact-logo img{
+        width: 2rem;
+        margin-top: 8rem;
+
+    }
+
+
+    .message {
+    width: 48%;
+    padding: 20px;
+}
+
+.message h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:#E82574 ;
+}
+.message input{
+    width: 100%;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 1px solid ;
+    outline: none;
+}
+.message textarea{
+    width: 100%;
+    height: 5rem;
+    border: none;
+    border-bottom: 1px solid ;
+    outline: none;
+}
+.message input::placeholder,textarea::placeholder{
+    color: black;
+    font-size: 0.9rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
+}
+.message .message-btn{
+    width: 70%;
+    border:none ;
+    position: relative;
+    left: 4.2rem;
+    padding-block: 1rem;
+    margin-top:1rem;
+    background-color: #BC1C5C;
+    color: white;
+    border-radius: 0.5rem;
+}
+.map{
+    width: 100%;
+    padding-top: 2rem;
+}
+.map  iframe{
+    width: 100%;
+    height: 50vh;
+}
+/* footer{
+    width: 100%;
+    padding-top: 2rem;
+    background-color: #333;
+}
+.footer-desc{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+ 
+}
+.footer-desc a{
+    text-decoration: none;
+}
+footer .resto-name{
+    width: 20%;
+    margin-top: 2rem;
+}
+.resto-name .resto-name-heading{
+    width: 60%;
+}
+.resto-name .resto-name-heading h3{
+    font-size: 2rem;
+    color: #FFFFD7;
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
+.resto-name .resto-name-para {
+   width: 60%;
+}
+.resto-name-para p{
+  font-size: 1rem;
+  padding-bottom: 2rem; 
+  color:#78716C ;   
+}
+.resto-name-btn{
+    padding-bottom: 8rem;
+}
+.resto-name button
+{
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 0.4rem;
+    background-color: #BC1C5C;
+    border: none; 
+} 
+.resto-name button a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+footer .resto-links{
+    width: 20%;
+}
+.resto-links .resto-link-heading{
+    width: 60%;
+}
+.resto-links .resto-link-heading h3{
+    font-size: 2rem;
+    color: #FFFFD7;
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+.resto-links .resto-link-para {
+    width: 60%;
+ }
+footer .resto-service{
+    width: 20%;
+}
+footer .resto-contact{
+    width: 20%;
+} */
+
+/* General Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    padding: 1.5rem;
+}
+
+/* Footer Container */
+.footer-desc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Section Styling */
+footer .resto-name, footer .resto-links, footer .resto-service, footer .resto-contact {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Header in Footer */
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+/* Paragraph Styling in Footer */
+footer p, footer a {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Link Styling */
+footer a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f1c40f;
+}
+
+/* Button Styling */
+footer .resto-name-btn button {
+    background-color: #f1c40f;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer .resto-name-btn button:hover {
+    background-color: #e67e22;
+}
+
+/* Social Media Icons Styling */
+footer .resto-contact-logo a {
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+footer .resto-contact-logo a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+footer .resto-contact-logo a:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Address & Contact Details */
+footer .resto-contact-para {
+    margin-bottom: 20px;
+}
+
+footer .resto-contact-para a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .footer-desc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .resto-name, footer .resto-links, footer .resto-service, footer .resto-contact {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer .resto-name-btn button {
+        width: 100%;
+    }
+
+    footer .resto-contact-logo a {
+        margin-right: 10px;
+    }
+}
+
+/* Copyright Styling */
+.cpyryt {
+    text-align: center;
+    color: #bbb;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+.cpyryt a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+
+
+    
